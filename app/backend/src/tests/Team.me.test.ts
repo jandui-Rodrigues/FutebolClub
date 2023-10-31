@@ -1,11 +1,12 @@
 import * as sinon from 'sinon';
 import * as chai from 'chai';
+// @ts-ignore
+import chaiHttp = require('chai-http');
 
-import chaiHttp from 'chai-http';
-import { app } from '../../app'
+import { app } from '../app'
 
-import SequelizeTeam from '../../database/models/SequelizeTeam'
-import { team, teams } from '../mock/Team/Team.mock';
+import SequelizeTeam from '../database/models/SequelizeTeam'
+import { team, teams } from './mock/Team/Team.mock';
 
 chai.use(chaiHttp);
 
@@ -36,7 +37,7 @@ describe('Team Test', function() {
     const { status, body } = await chai.request(app).get('/teams/1');
 
     expect(status).to.equal(404);
-    expect(body.message).to.equal('Team 1 not found');
+    expect(body.message).to.equal('Team 1 not Found');
   });
   afterEach(sinon.restore);
 });
