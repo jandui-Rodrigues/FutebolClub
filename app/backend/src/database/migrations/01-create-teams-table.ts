@@ -10,7 +10,7 @@ export default {
         primaryKey: true,
       },
       teamName: {
-        type: DataTypes.STRING(40),
+        type: DataTypes.STRING,
         field: 'team_name'
       }
     });
