@@ -51,4 +51,14 @@ SequelizeMatcher.init({
   underscored: true,
 });
 
+SequelizeMatcher.hasOne(SequelizeMatcher, {
+  foreignKey: 'homeTeamId',
+  as: 'homeTeam',
+});
+
+SequelizeMatcher.hasOne(SequelizeMatcher, {
+  foreignKey: 'awayTeamId',
+  as: 'awayTeam',
+});
+
 export default SequelizeMatcher;
