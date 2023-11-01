@@ -1,29 +1,33 @@
-// No email user
-const validPassword = 'senha';
-const noEmailLoginBody = { username: '', password: validPassword };
+import * as bcrypt from 'bcryptjs';
+const validPassword = 'senha123';
+const validEmail = 'user@user.com';
 
-// ==== No passoword user
-const validUsername = 'User';
-const noPasswordLoginBody = { username: validUsername, password: '' };
+// No email user || Password user
+const noEmailLoginBody = { email: '', password: validPassword };
+const noPasswordLoginBody = { email: validEmail, password: '' };
 
-// === No user
-const notExistingUserBody = { username: 'Hack', password: validPassword };
+// === No exist user
+const notExistingUserBody = { email: 'Hack@hack.com', password: validPassword };
 
-// ExistUser 
-const existingUserWithWrongPasswordBody = { username: validUsername, password: 'wrong_password' };
-const hashedPassword = '$2a$08$Y8Abi8jXvsXyqm.rmp0B.uQBA5qUz7T6Ghlg/CvVr/gLxYj5UAZVO';
+// ExistUser with wrong password
+const existingUserWithWrongPasswordBody = { email: validEmail, password: 'wrong_password' };
+// ====== User exist password valid
+const hashedPassword = bcrypt.hashSync(validPassword, 8) ;
 
 const existingUser = { 
   id: 2, 
-  username: validUsername,
+  email: validEmail,
   password: hashedPassword,
   role: 'user',
-  email: 'user@user.com',
+  username: 'User'
 };
 
 // ====== Valida User
-const validLoginBody = { username: validUsername, password: validPassword };
+const validLoginBody = { email: validEmail, password: validPassword };
 
+const tokenValid = {
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJVc2VyIiwiaWF0IjoxNjk4ODUzODcwfQ.K_Ky7yvs5h7WLL7t00w8iqKv0Wi2FsM9A4bQvWlPrQs'
+};
 
 
 export default {
@@ -32,5 +36,6 @@ export default {
   notExistingUserBody,
   existingUserWithWrongPasswordBody,
   existingUser,
-  validLoginBody
+  validLoginBody,
+  tokenValid
 };

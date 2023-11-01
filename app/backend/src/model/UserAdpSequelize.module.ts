@@ -7,15 +7,11 @@ export default class UserAdapterSequelize implements UserModel {
 
   async findByEmail(email: string): Promise<IUser | null> {
     const user = await this.model.findOne({ where: { email } });
-    if (user == null) return user;
-
     return user;
   }
 
   async findById(id: IUser['id']): Promise<IUser | null> {
     const user = await this.model.findOne({ where: { id } });
-    if (user == null) return user;
-
     return user;
   }
 }

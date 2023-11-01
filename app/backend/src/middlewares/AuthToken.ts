@@ -1,5 +1,4 @@
 import { NextFunction, Request, Response } from 'express';
-import { log } from 'console';
 import jwt from '../utils/jwt';
 
 class AuthValidation {
@@ -15,7 +14,6 @@ class AuthValidation {
 
     try {
       const payload = jwt.verify(token);
-      log(payload);
       res.locals.user = payload;
       return next();
     } catch (err) {
