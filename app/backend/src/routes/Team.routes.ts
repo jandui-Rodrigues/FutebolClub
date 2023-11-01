@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import TeamController from '../controller/Team.controller';
 
-export default class ClassBookRouter {
+export default class ClassTeamRouter {
   private router: Router;
 
   private teamController = new TeamController();
