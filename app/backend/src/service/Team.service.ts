@@ -1,7 +1,7 @@
 import { ServiceResponse } from '../Interfaces/ServiceResponse';
 import { ITeam } from '../Interfaces';
 import TeamModel from '../Interfaces/Team/TeamModel';
-import TeamAdapterSequelie from '../model/TeamAdpSequelize.model';
+import TeamAdapterSequelie from '../model/TeamAdpSequelize.module';
 
 export default class TeamService {
   constructor(
