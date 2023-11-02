@@ -26,9 +26,8 @@ const existingUser = {
 const validLoginBody = { email: validEmail, password: validPassword };
 
 const tokenValid = {
-  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJVc2VyIiwiaWF0IjoxNjk4ODUzODcwfQ.K_Ky7yvs5h7WLL7t00w8iqKv0Wi2FsM9A4bQvWlPrQs'
-};
-
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJBZG1pbiIsImlhdCI6MTY5ODk1NTg1MH0.-Lq8xAQpdYgmgFWpFvxtWzP__RrbgH3BSwXOm1ibYkk"
+}
 
 export default {
   noEmailLoginBody,
