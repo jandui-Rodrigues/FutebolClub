@@ -2,7 +2,7 @@ import { NextFunction, Request, Response } from 'express';
 import jwt from '../utils/jwt';
 
 class AuthValidation {
-  static validateLogin(req: Request, res: Response, next: NextFunction): Response | void {
+  static validate(req: Request, res: Response, next: NextFunction): Response | void {
     const { authorization } = req.headers;
 
     if (!authorization) {

@@ -18,7 +18,7 @@ export default class ClassLoginRouter {
     this.router.post('/', (req, res) => this.teamController.login(req, res));
     this.router.get(
       '/role',
-      AuthValidation.validateLogin,
+      AuthValidation.validate,
       (req, res) => this.userController.getRole(req, res),
     );
     return this.router;
