@@ -1,5 +1,6 @@
 import IMatcher from './IMatcher';
 
 export type MatcherModel = {
-  findAll(email: string): Promise<IMatcher[]>;
+  findAll(): Promise<IMatcher[]>;
+  findallQuery(query: string): Promise<IMatcher[]>;
 };
