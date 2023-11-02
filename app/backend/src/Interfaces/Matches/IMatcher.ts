@@ -7,4 +7,18 @@ type IMatcher = {
   inProgress: boolean
 };
 
+type UpdateTeamsGoals = {
+  homeTeamGoals: number,
+  awayTeamGoals: number
+};
+type UpdateFinish = {
+  inProgress: boolean
+};
+type UpdateMatcher = UpdateTeamsGoals | UpdateFinish;
+
 export default IMatcher;
+
+export {
+  UpdateMatcher,
+  UpdateTeamsGoals,
+};

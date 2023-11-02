@@ -15,4 +15,13 @@ export default class TeamAdapterSequelie implements TeamModel {
 
     return team;
   }
+
+  async findTeams(teamId1: number, teamId2: number) {
+    const teams = await this.model.findAll({
+      where: {
+        id: [teamId1, teamId2],
+      },
+    });
+    return teams;
+  }
 }
