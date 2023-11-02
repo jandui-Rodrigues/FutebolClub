@@ -1,5 +1,6 @@
 export type ServiceResponseErrorType = 'INVALID_DATA' |
-'UNAUTHORIZED' | 'NOT_FOUND' | 'BAD_REQUEST' | 'UNPROCESSABLE_ENTITY' | 'INTERNAL_ERROR';
+'UNAUTHORIZED' | 'NOT_FOUND' | 'BAD_REQUEST' |
+'UNPROCESSABLE_ENTITY' | 'INTERNAL_ERROR' | 'CONFLICT';
 
 export type ServiceResponseError = {
   status: ServiceResponseErrorType,

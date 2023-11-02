@@ -11,14 +11,34 @@ export default class MatcherController {
 
   async getAll(req: Request, res: Response) {
     const inProgress = req.query.inProgress as string;
-    try {
-      const { status, data } = await this.matcherService.getAll(inProgress);
+    const { status, data } = await this.matcherService.getAll(inProgress);
 
-      res.status(mapStatusHTTP(status)).json(data);
-    } catch (error) {
-      if (error instanceof Error) {
-        return res.status(500).json({ message: error.message });
-      }
-    }
+    res.status(mapStatusHTTP(status)).json(data);
+  }
+
+  async finishedMatcher(req: Request, res: Response) {
+    const { id } = req.params;
+
+    const { status, data } = await this.matcherService.finishedMatcher(Number(id));
+
+    res.status(mapStatusHTTP(status)).json(data);
+  }
+
+  async updateMatcher(req: Request, res: Response) {
+    const { id } = req.params;
+    const { homeTeamGoals, awayTeamGoals } = req.body;
+
+    const { status, data } = await this
+      .matcherService.updateMatcher(Number(id), { homeTeamGoals, awayTeamGoals });
+
+    res.status(mapStatusHTTP(status)).json(data);
+  }
+
+  async createMatcher(req: Request, res: Response) {
+    const matcher = req.body;
+
+    const { status, data } = await this.matcherService.createMatcher(matcher);
+
+    res.status(mapStatusHTTP(status)).json(data);
   }
 }
