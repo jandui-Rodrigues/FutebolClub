@@ -13,6 +13,7 @@ export default class LeadersBoardRouter {
 
   buildRoutes() {
     this.router.get('/:home', (req, res) => this.leadersBoardController.getBoard(req, res));
+    this.router.get('/', (req, res) => this.leadersBoardController.getBoard(req, res));
     return this.router;
   }
 }
