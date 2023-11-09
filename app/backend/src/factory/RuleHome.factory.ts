@@ -1,6 +1,7 @@
+import { IRulesClassification } from '../Interfaces/LeaderBoard/IRules';
 import { GoalsTeams, ILeaderBoard } from '../Interfaces/LeaderBoard/ILeadersBoard';
 
-export default class ClassificationRules {
+export default class RulesHome implements IRulesClassification {
   private totalPoints = 0;
   private totalGames = 0;
   private totalVictories = 0;
@@ -39,7 +40,7 @@ export default class ClassificationRules {
     this.efficiency += Number(((this.totalPoints / (this.totalGames * 3)) * 100).toFixed(2));
   }
 
-  createClassification(): void {
+  generateClassification(): void {
     this.matchesGoalsTeam.forEach((match) => {
       this.totalGames += 1;
       this.checkStatusMatchers(match.homeTeamGoals, match.awayTeamGoals);
@@ -50,7 +51,7 @@ export default class ClassificationRules {
   }
 
   getClassification(): ILeaderBoard {
-    this.createClassification();
+    this.generateClassification();
     return {
       name: this.name,
       totalPoints: this.totalPoints,
