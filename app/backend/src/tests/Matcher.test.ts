@@ -133,7 +133,7 @@ describe('Matcher Test', function() {
  describe('POST /matches', function() {
   it('should return created for matcher create', async function() {
     // Arrange
-    sinon.stub(SequelizeTeam,'findAll').resolves(matcherMock.matches as any)
+    sinon.stub(SequelizeTeam,'findAll').resolves(matcherMock.findTeamsCreated as any)
     sinon.stub(SequelizeMatcher, 'create').resolves(matcherMock.createdMatch as any);
     const { id, inProgress, ...sendData } = matcherMock.createdMatch;
     // Act

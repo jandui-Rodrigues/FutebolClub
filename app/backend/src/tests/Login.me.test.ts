@@ -84,8 +84,7 @@ describe('/login', function () {
     // Arrange
     const httpRequestBody = loginMock.validLoginBody
 
-    const mockFindOneReturn = SequelizeUser.build(loginMock.existingUser);
-    sinon.stub(SequelizeUser, 'findOne').resolves(mockFindOneReturn);
+    sinon.stub(SequelizeUser, 'findOne').resolves(loginMock.existingUser as any);
 
     // Act
     const httpResponse = await chai.request(app).post('/login').send(httpRequestBody);
@@ -120,9 +119,8 @@ describe('/login/role', function () {
   it('Ao receber um token valido retorna um role', async function () {
     // Arrange
     const httpRequestBody = { token: loginMock.tokenValid.token }
-    const mockFindOneReturn = SequelizeUser.build(loginMock.existingUser);
     sinon.stub(jwt,'verify').returns({ id: 2, username: 'User' });
-    sinon.stub(SequelizeUser, 'findOne').resolves(mockFindOneReturn);
+    sinon.stub(SequelizeUser, 'findOne').resolves(loginMock.existingUser as any);
 
     // Act
     const httpResponse = await chai.request(app).get('/login/role').set('Authorization', httpRequestBody.token);
