@@ -10,6 +10,8 @@ projeto. Sendo esta API ultizada pelo Front.
 
 ---
 
+<img src="./assets/front-example.png">
+
 <h2>Tenologias Ultilizadas</h2>
 <h4>Front</h4>
  <div >
@@ -26,21 +28,34 @@ projeto. Sendo esta API ultizada pelo Front.
  <img aling="center" height="32px" src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge">
  <img aling="center" height="32px" src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white">
  <img aling="center" height="32px" src="https://img.shields.io/badge/sequelize-323330?style=for-the-badge&logo=sequelize&logoColor=blue">
-
- <img aling="center" height="32px" src="">
  
  </div>
  <h4>Testes</h4>
  <div>
  <img aling="center" height="32px" src="https://img.shields.io/badge/Jest-323330?style=for-the-badge&logo=Jest&logoColor=white">
- <img aling="center" height="32px" src="	https://img.shields.io/badge/sinon.js-323330?style=for-the-badge&logo=sinon">
+ <img aling="center" height="32px" src="https://img.shields.io/badge/sinon.js-323330?style=for-the-badge&logo=sinon">
  <img aling="center" height="32px" src="https://img.shields.io/badge/chai.js-323330?style=for-the-badge&logo=chai&logoColor=red">
  <img aling="center" height="32px" src="https://img.shields.io/badge/mocha.js-323330?style=for-the-badge&logo=mocha&logoColor=Brown">
 
  </div>
 <br>
 
-<img src="./assets/front-example.png">
+---
+ 
+<h3>Features</h3>
+
+- [x] Login de usuário
+- [x] Cadastro de novas Novas partidas
+- [x] Ediçao de partidas
+- [X] Filtro de Partidas
+	- [x] Em Andamento
+        - [x] Encerrada
+        - [x] Todas as Partidas
+- [x] Filtro de classificação de tabela de lideres
+	- [x]  Partidas da Casa
+        - [x]  Partidas do time de fora
+        - [x]  Todas as partidas de cada time.
+---
 
 <h4>
 	🚧 🚀 Em construção...  🚧
