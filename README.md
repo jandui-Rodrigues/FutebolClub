@@ -16,8 +16,8 @@ projeto. Sendo esta API ultizada pelo Front.
 <h4>Front</h4>
  <div >
  <img aling="center" height="32px" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
- <img aling="center" height="32px" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
  <img aling="center" height="32px" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white">
+ <img aling="center" height="32px" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
  <img aling="center" height="32" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
  <img aling="center" height="32" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
  <img aling="center" height="32" src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white">
@@ -41,7 +41,10 @@ projeto. Sendo esta API ultizada pelo Front.
 <br>
 
 ---
- 
+ <h4>
+	🚧 🚀 Em construção...  🚧
+</h4>
+<p>Ainda Busco fazer melhorias nesta aplicação e refatoraçoes, caso tenho algo que possa melhorar não deixe de comentar em que posso melhorar.</p>
 <h3>Features</h3>
 
 - [x] Login de usuário
@@ -49,18 +52,13 @@ projeto. Sendo esta API ultizada pelo Front.
 - [x] Ediçao de partidas
 - [X] Filtro de Partidas
 	- [x] Em Andamento
-        - [x] Encerrada
-        - [x] Todas as Partidas
+   - [x] Encerrada
+   - [x] Todas as Partidas
 - [x] Filtro de classificação de tabela de lideres
 	- [x]  Partidas da Casa
-        - [x]  Partidas do time de fora
-        - [x]  Todas as partidas de cada time.
+  - [x]  Partidas do time de fora
+  - [x]  Todas as partidas de cada time.
 ---
-
-<h4>
-	🚧 🚀 Em construção...  🚧
-</h4>
-<p>Ainda Busco fazer melhorias nesta aplicação e refatoraçoes, caso tenho algo que possa melhorar não deixe de comentar em que posso melhorar.</p>
 
 ## 🚀 Como executar o projeto
 
