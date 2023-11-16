@@ -86,7 +86,7 @@ com o código como [VSCode](https://code.visualstudio.com/)
   <br>
 
           # Clone este repositório
-          $ git clone 
+          $ git clone git@github.com:jandui-Rodrigues/FutebolClub.git
           
           # Acesse a pasta do projeto no terminal/cmd
           $ cd FutebolClub
@@ -113,7 +113,7 @@ com o código como [VSCode](https://code.visualstudio.com/)
 
 Clone este repositório
 
-    $ git clone
+    $ git clone git@github.com:jandui-Rodrigues/FutebolClub.git
 
 Acesse a pasta do projeto no terminal/cmd
 
@@ -145,7 +145,7 @@ servidor do back inciará na porta:3001 - acesse http://localhost:3001
     # Caso não tenha um conteiner ativo use
     $ docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=suaSenha --name=mysql-db mysql:8.0.29
     # Clone este repositório
-    $ git clone 
+    $ git clone git@github.com:jandui-Rodrigues/FutebolClub.git
 
     # Acesse a pasta do projeto no terminal/cmd
     $ cd FutebolClub
@@ -168,7 +168,7 @@ servidor do back inciará na porta:3001 - acesse http://localhost:3001
      </summary>
 
     # Clone este repositório
-    $ git clone 
+    $ git clone git@github.com:jandui-Rodrigues/FutebolClub.git
 
     # Acesse a pasta do projeto no seu terminal/cmd
     $ cd FutebolClub
@@ -184,7 +184,7 @@ servidor do back inciará na porta:3001 - acesse http://localhost:3001
 
     # A aplicação será aberta na porta:3000 - acesse http://localhost:3000
 
-</details>
+  </details>
 </details>
 
 ---
