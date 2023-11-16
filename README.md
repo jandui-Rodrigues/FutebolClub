@@ -1,3 +1,16 @@
+## 💻 Sobre o projeto
+O TFC é um site informativo sobre partidas e classificações de futebol! ⚽️
+
+Fui responsavel por criar uma API (utilizando o método TDD) e também integrar - através do docker-compose - as aplicações para que elas funcionem consumindo um banco de dados. Construindo um back-end dockerizado utilizando modelagem de dados através do Sequelize. Respeitando as regras de negócio providas no projeto. Sendo esta API ultizada pelo Front.
+
+---
+
+<img src="./assets/front-example.png">
+
+ <h4> 
+	🚧 🚀 Em construção...  🚧
+</h4>
+<p>Ainda Busco fazer melhorias nesta aplicação e refatoraçoes, caso tenho algo que possa melhorar não deixe de comentar em que posso melhorar.</p>
 
  ## 🚀 Como executar o projeto
 
