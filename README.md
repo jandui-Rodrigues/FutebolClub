@@ -5,7 +5,7 @@ O TFC é um site informativo sobre partidas e classificações de futebol! ⚽�
 Fui responsavel por criar uma API (utilizando o método TDD) e também integrar -
 através do docker-compose - as aplicações para que elas funcionem consumindo um
 banco de dados. Construindo um back-end dockerizado utilizando modelagem de
-dados através do Sequelize. Respeitando as regras de negócio providas no
+dados através do Sequelize Alem de usar os Pricipios [SOLID](https://solid.com/). Respeitando as regras de negócio providas no
 projeto. Sendo esta API ultizada pelo Front.
 
 ---
@@ -185,6 +185,9 @@ servidor do back inciará na porta:3001 - acesse http://localhost:3001
     # A aplicação será aberta na porta:3000 - acesse http://localhost:3000
 
 </details>
+</details>
+
+---
 
 ## 📝 Licença
 
@@ -192,6 +195,3 @@ Este projeto esta sobe a licença [MIT](./LICENSE).
 
 Feito com ❤️ por Jandui Rodrigues neto 👋🏽 [Entre em contato!](https://linkedin.com/in/dev-jandui-rodrigues/)
 
----
-
-</details>
