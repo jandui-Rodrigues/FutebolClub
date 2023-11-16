@@ -186,4 +186,12 @@ servidor do back inciará na porta:3001 - acesse http://localhost:3001
 
 </details>
 
+## 📝 Licença
+
+Este projeto esta sobe a licença [MIT](./LICENSE).
+
+Feito com ❤️ por Jandui Rodrigues neto 👋🏽 [Entre em contato!](https://linkedin.com/in/dev-jandui-rodrigues/)
+
+---
+
 </details>
